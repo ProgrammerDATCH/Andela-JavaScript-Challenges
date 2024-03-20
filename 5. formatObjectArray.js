@@ -5,7 +5,7 @@ function formatArray(arr) {
         let [fullName, age, gender] = person.split(', ');
         let [firstName, secondName] = fullName.split(' ');
 
-        let personInfo = { 'second-name': secondName, age: parseInt(age) };
+        let personInfo = { secondName: secondName, age: parseInt(age) };
 
         if (gender === 'female') {
             result.females[firstName] = personInfo;
